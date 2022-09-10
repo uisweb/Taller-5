@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../Taller_5/Scripts/Registro.js"></script>
+    <style>
+        @import'../Taller_5/Css/Registro.css';
+    </style>
+</head>
+
+<body>
+
+    <form id="form" action="../Taller_5/Index.html" method="get">
+
+        <h1>Formulario de Registro</h1>
+        <p type="Nombre"> <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+        </p>
+
+        <p type="Apellido"><input type="text" id="Apellido" name="Apellido" placeholder="Apellido">
+        </p>
+
+        <p type="Fecha de Nacimiento"><input type="date" name="Fnacimiento" id="Fnacimiento">
+        </p>
+
+        <p type="Edad"><input type="text" name="Edad" id="Edad" placeholder="Edad">
+        </p>
+
+
+        <p type="correo"><input type="email" name="email" id="email" placeholder="Correo Electronico">
+        </p>
+
+        <p type="Usuario"><input type="text" id="Usuario" name="Usuario" placeholder="Usuario">
+        </p>
+
+        <p type="Contraseña"><input type="password" name="password" id="password" placeholder="Contraseña">
+        </p>
+
+        <p type="Confirmar Contraseña"><input type="password" name="Cpassword" id="Cpassword" placeholder="Confirmar Contraseña">
+        </p>
+
+        <div id="contenedor">
+
+            <p type="Usted ha sufrido alguna enfermedad"> <input type="checkbox" name="Check1" id="CB-enfermedad" onchange=showContent(1)>
+            </p>
+
+            <div id="divenfermedad">
+
+                <p type="Usted ha contraído alguna enfermedad contagiosa"> <input type="checkbox" name="CB-enfermedadContagiosa" id="CB-enfermedadContagiosa" onchange=showContent(2)>
+                </p>
+
+                <div id="subdivenfermedad">
+
+                    <p type="Podría indicar cuales enfermedades a sufrido">
+                        <textarea name="enfermedades" cols="42" rows="10"></textarea>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+    <center>
+        <a href="../Taller_5/Index.html"><img src="../Taller_5/img/inicio2.png" width="50px" height="50px"></a>
+    </center>
+
+</body>
+
+</html>
